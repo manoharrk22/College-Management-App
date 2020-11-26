@@ -27,4 +27,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_donut_large_black_18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="donald trump"
+        android:textSize="30sp"/>
 </LinearLayout>
