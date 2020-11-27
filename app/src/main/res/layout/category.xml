@@ -31,7 +31,7 @@
             android:layout_width="72dp"
             android:layout_height="55dp"
             android:background="@color/white"
-            android:src="@drawable/baseline_donut_large_black_18dp"
+            android:src="@drawable/bmsitlogo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
