@@ -1,14 +1,11 @@
 package com.example.collegemanagementBmsit;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,27 +13,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        CardView cardView=(CardView) findViewById(R.id.loginbutton);
-        cardView.setOnClickListener(new View.OnClickListener(){
-                                        @Override
-                                        public void onClick(View view) {
-                                            Toast.makeText(view.getContext(),"category",Toast.LENGTH_SHORT).show();
-                                            Intent i=new Intent(view.getContext(),Category.class);
-                                            startActivity(i);
-                                        }
-                                    }
 
-        );
-        Button button=(Button) findViewById(R.id.registerbutton);
-        button.setOnClickListener(new View.OnClickListener(){
-                                      @Override
-                                      public void onClick(View view) {
-                                          Toast.makeText(view.getContext(),"register",Toast.LENGTH_SHORT).show();
-                                          Intent i=new Intent(view.getContext(),register.class);
-                                          startActivity(i);
-                                      }
-                                  }
+        Button adminButton=(Button) findViewById(R.id.admin_button_main);
+        adminButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent adminIntent = new Intent(MainActivity.this, AdminLoginActivity.class);
+                startActivity(adminIntent);
+            }
+        });
 
-        );
+        Button studentButton= (Button) findViewById(R.id.student_button_main);
+        studentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent studentIntent = new Intent(MainActivity.this, studentLoginActivity.class);
+                startActivity(studentIntent);
+            }
+        });
+
+
     }
 }

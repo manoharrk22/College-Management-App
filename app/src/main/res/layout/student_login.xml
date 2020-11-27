@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/category_layout_header"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="113dp"
+        android:src="@drawable/bmsitlogo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="87dp"
+
+        android:background="#DADEE4"
+        android:ems="10"
+        android:hint="useremail"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#A9ABAD"
+        android:ems="10"
+        android:hint="password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/student_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:text="register here" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student_login"
+        android:textSize="44sp"/>
+
+
+</LinearLayout>
