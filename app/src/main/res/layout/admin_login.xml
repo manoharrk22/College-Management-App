@@ -1,48 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="128dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="113dp"
-        android:src="@drawable/bmsitlogo" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="87dp"
-        android:background="#E8EBEF"
-        android:ems="10"
-        android:hint="useremail"
-        android:textColorHint="@color/black"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="40dp"
-        android:background="#FFFBF7"
-        android:ems="10"
-        android:hint="password"
-        android:textColorHint="@color/black"
-        android:inputType="textPassword" />
-
-
-    <Button
-        android:id="@+id/admin_login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginRight="114dp"
-        android:text="register here" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,5 +13,80 @@
         android:text="Admin_login"
         android:textSize="44sp"/>
 
+    <ImageView
+        android:id="@+id/admin_login_bmsit_imv"
+        android:layout_width="128dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:src="@drawable/bmsitlogo" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/admin_login_username_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/admin_login_bmsit_imv"
+        android:layout_centerInParent="true"
+        android:text="Admin"
+        android:layout_marginTop="87dp"
+        android:background="#3D5069"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="useremail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/admin_login_password_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/admin_login_username_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#3D5069"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/admin_login_login_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/admin_login_password_edittext"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        app:cardBackgroundColor="#FF69B4"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+
+        <TextView
+            android:id="@+id/admin_login_login_txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:text="login"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/admin_login_registerHere_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_login_login_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:text="register here" />
+
+</RelativeLayout>

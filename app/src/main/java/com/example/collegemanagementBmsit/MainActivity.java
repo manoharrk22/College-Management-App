@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button adminButton=(Button) findViewById(R.id.admin_button_main);
+        Button adminButton=(Button) findViewById(R.id.activity_main_admin_btn);
         adminButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button studentButton= (Button) findViewById(R.id.student_button_main);
+        Button studentButton= (Button) findViewById(R.id.activity_main_student_btn);
         studentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,9 +3,9 @@ package com.example.collegemanagementBmsit;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class studentLoginActivity extends AppCompatActivity {
 
@@ -14,7 +14,7 @@ public class studentLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.student_login);
 
-        Button studentLoginBtn = (Button) findViewById(R.id.student_login_button);
+        CardView studentLoginBtn = (CardView) findViewById(R.id.student_login_login_btn);
         studentLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

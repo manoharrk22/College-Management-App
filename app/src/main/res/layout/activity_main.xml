@@ -9,13 +9,14 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/activity_main_bmsitLogo_imv"
         android:layout_width="128dp"
         android:layout_height="130dp"
         android:layout_marginTop="113dp"
         android:src="@drawable/bmsitlogo" />
 
     <Button
-        android:id="@+id/admin_button_main"
+        android:id="@+id/activity_main_admin_btn"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:text="Admin"
@@ -24,7 +25,7 @@
         android:ems="10" />
 
     <Button
-        android:id="@+id/student_button_main"
+        android:id="@+id/activity_main_student_btn"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:text="student"

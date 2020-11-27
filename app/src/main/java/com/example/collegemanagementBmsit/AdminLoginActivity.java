@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class AdminLoginActivity extends AppCompatActivity {
 
@@ -14,7 +15,7 @@ public class AdminLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_login);
 
-        Button adminLoginBtn= (Button) findViewById(R.id.admin_login_button);
+        CardView adminLoginBtn= (CardView) findViewById(R.id.admin_login_login_btn);
         adminLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
