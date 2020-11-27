@@ -16,8 +16,11 @@
         <activity android:name=".AdminLoginActivity"
             android:label="AdminLogin"/>
 
-        <activity android:name=".CategoryActivity"
-            android:label="Category"/>
+        <activity android:name=".CategoryStudentActivity"
+            android:label="CategoryStudent"/>
+
+        <activity android:name=".CategoryAdminActivity"
+            android:label="CategoryAdmin"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

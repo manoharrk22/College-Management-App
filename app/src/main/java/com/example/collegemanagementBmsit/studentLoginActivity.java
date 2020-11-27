@@ -18,7 +18,7 @@ public class studentLoginActivity extends AppCompatActivity {
         studentLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent studentLoginToCategory = new Intent(studentLoginActivity.this, CategoryActivity.class);
+                Intent studentLoginToCategory = new Intent(studentLoginActivity.this, CategoryStudentActivity.class);
                 startActivity(studentLoginToCategory);
             }
         });
