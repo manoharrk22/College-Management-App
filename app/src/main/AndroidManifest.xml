@@ -9,27 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeManagement">
-
-        <activity android:name=".studentLoginActivity"
-            android:label="StudentLogin"/>
-
-        <activity android:name=".AdminLoginActivity"
-            android:label="AdminLogin"/>
-
-        <activity android:name=".CategoryStudentActivity"
-            android:label="CategoryStudent"/>
-
-        <activity android:name=".CategoryAdminActivity"
-            android:label="CategoryAdmin"/>
-
+        <activity android:name=".studentregister"></activity>
+        <activity
+            android:name=".studentLoginActivity"
+            android:label="StudentLogin" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:label="AdminLogin" />
+        <activity
+            android:name=".CategoryStudentActivity"
+            android:label="CategoryStudent" />
+        <activity
+            android:name=".CategoryAdminActivity"
+            android:label="CategoryAdmin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
