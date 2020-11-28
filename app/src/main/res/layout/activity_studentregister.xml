@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".studentregister"
-    android:background="@drawable/pic3">
+    android:background="@drawable/pic3"
+    tools:context=".studentregister">
+
     <ImageView
         android:id="@+id/student_register_bmsit_imv"
         android:layout_width="128dp"

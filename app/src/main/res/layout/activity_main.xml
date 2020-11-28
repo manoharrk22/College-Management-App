@@ -22,17 +22,17 @@
         android:layout_below="@+id/activity_main_bmsitLogo_imv"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
-        app:cardCornerRadius="30dp"
         app:cardBackgroundColor="#FF69B4"
-        >
+        app:cardCornerRadius="30dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="admin"
-            android:textSize="22sp"
-            android:textColor="#fff"
+            android:layout_marginLeft="75dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="75dp"/>
+            android:text="admin"
+            android:textColor="#fff"
+            android:textSize="22sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -42,17 +42,17 @@
         android:layout_below="@+id/activity_main_admin_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        app:cardCornerRadius="30dp"
         app:cardBackgroundColor="#FF69B4"
-        >
+        app:cardCornerRadius="30dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="student"
-            android:textSize="22sp"
-            android:textColor="#fff"
+            android:layout_marginLeft="75dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="75dp"/>
+            android:text="student"
+            android:textColor="#fff"
+            android:textSize="22sp" />
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

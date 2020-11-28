@@ -13,16 +13,17 @@ public class CategoryStudentActivity extends AppCompatActivity {
     Button btn;
     FirebaseAuth mfirebaseauth;
     private FirebaseAuth.AuthStateListener mauthstatelistener;
+
     @Override
-    protected void onCreate( Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_student);
-        btn=findViewById(R.id.buttonlogout);
+        btn = findViewById(R.id.buttonlogout);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             FirebaseAuth.getInstance().signOut();
-                Intent i=new Intent(CategoryStudentActivity.this,studentLoginActivity.class);
+                FirebaseAuth.getInstance().signOut();
+                Intent i = new Intent(CategoryStudentActivity.this, studentLoginActivity.class);
                 startActivity(i);
             }
         });

@@ -10,11 +10,11 @@ import androidx.cardview.widget.CardView;
 public class AdminLoginActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate( Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_login);
 
-        CardView adminLoginBtn= (CardView) findViewById(R.id.admin_login_login_btn);
+        CardView adminLoginBtn = (CardView) findViewById(R.id.admin_login_login_btn);
         adminLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
 
-
     <ImageView
         android:id="@+id/student_login_bmsit_imv"
         android:layout_width="128dp"
