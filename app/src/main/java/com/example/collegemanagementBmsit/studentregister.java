@@ -55,7 +55,7 @@ public class studentregister extends AppCompatActivity {
       if(!task.isSuccessful()){
           Toast.makeText(studentregister.this,"signup unsuccessful",Toast.LENGTH_SHORT).show();
       }else{
-startActivity(new Intent(studentregister.this,CategoryAdminActivity.class));
+startActivity(new Intent(studentregister.this, CategoryStudentActivity.class));
       }
     }
 });
