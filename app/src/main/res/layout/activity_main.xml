@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/category_layout_header"
+    android:background="@drawable/pic2"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/activity_main_bmsitLogo_imv"
         android:layout_width="128dp"
         android:layout_height="130dp"
-        android:layout_marginTop="113dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
         android:src="@drawable/bmsitlogo" />
 
-    <Button
+    <androidx.cardview.widget.CardView
         android:id="@+id/activity_main_admin_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="Admin"
-        android:textAllCaps="true"
-        android:layout_marginTop="87dp"
-        android:ems="10" />
-
-    <Button
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/activity_main_bmsitLogo_imv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#FF69B4"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="admin"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="75dp"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
         android:id="@+id/activity_main_student_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="student"
-        android:textAllCaps="true"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/activity_main_admin_btn"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:ems="10"/>
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#FF69B4"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="student"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="75dp"/>
+    </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+
+
+
+
+</RelativeLayout>

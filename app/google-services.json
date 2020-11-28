@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "807667461924",
+    "firebase_url": "https://college-management-ecd6d.firebaseio.com",
+    "project_id": "college-management-ecd6d",
+    "storage_bucket": "college-management-ecd6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807667461924:android:9640ff017f4fa4ca588db1",
+        "android_client_info": {
+          "package_name": "com.example.collegemanagementBmsit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807667461924-kr7icq3lhsq7hul72raei23i8emhe54t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEi8QuIlnuepode52KPuYgQA3LU-dw19U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807667461924-kr7icq3lhsq7hul72raei23i8emhe54t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

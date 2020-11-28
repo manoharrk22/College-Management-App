@@ -4,14 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".MainActivity">
+    android:background="@drawable/pic2"
+    tools:context=".MainActivity"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Admin_login"
-        android:textSize="44sp"/>
+
 
     <ImageView
         android:id="@+id/admin_login_bmsit_imv"
@@ -28,12 +25,11 @@
         android:layout_height="40dp"
         android:layout_below="@+id/admin_login_bmsit_imv"
         android:layout_centerInParent="true"
-        android:text="Admin"
         android:layout_marginTop="87dp"
         android:background="#3D5069"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="useremail"
+        android:hint="adminemail"
         android:inputType="textEmailAddress" />
 
     <EditText
