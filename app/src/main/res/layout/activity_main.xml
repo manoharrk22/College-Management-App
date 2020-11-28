@@ -34,6 +34,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginLeft="75dp"/>
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/activity_main_student_btn"
         android:layout_width="220dp"
@@ -53,9 +54,5 @@
             android:layout_marginTop="8dp"
             android:layout_marginLeft="75dp"/>
     </androidx.cardview.widget.CardView>
-
-
-
-
 
 </RelativeLayout>

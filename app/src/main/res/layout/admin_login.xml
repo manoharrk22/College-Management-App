@@ -5,10 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pic2"
-    tools:context=".MainActivity"
-    >
-
-
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/admin_login_bmsit_imv"
@@ -49,7 +46,6 @@
         android:id="@+id/admin_login_login_btn"
         android:layout_width="300dp"
         android:layout_height="50dp"
-
         android:layout_below="@+id/admin_login_password_edittext"
         android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
