@@ -57,8 +57,8 @@
 
             <LinearLayout
                 android:id="@+id/category_admin_category_one"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="22dp"
                 android:background="@drawable/white_grey_background"
                 android:gravity="center"
@@ -80,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="Category1"
+                    android:text="upload Notice"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -90,8 +90,8 @@
 
             <LinearLayout
                 android:id="@+id/category_admin_category_two"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="22dp"
                 android:background="@drawable/white_grey_background"
                 android:gravity="center"
@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="Category2"
+                    android:text="Attendance"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -123,8 +123,8 @@
 
             <LinearLayout
                 android:id="@+id/category_admin_category_three"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="22dp"
                 android:background="@drawable/white_grey_background"
                 android:gravity="center"
@@ -146,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="Category3"
+                    android:text="E-books"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -155,8 +155,8 @@
 
             <LinearLayout
                 android:id="@+id/category_admin_category_four"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="22dp"
                 android:background="@drawable/white_grey_background"
                 android:gravity="center"
@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="Category4"
+                    android:text="College Gallery"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -187,8 +187,8 @@
 
             <LinearLayout
                 android:id="@+id/category_admin_category_five"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="22dp"
                 android:background="@drawable/white_grey_background"
                 android:gravity="center"
@@ -211,10 +211,12 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="Category5"
+                    android:text="database portfolio"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
+                    <!-- Make img/icon size small to make the text fit -->
 
             </LinearLayout>
 
