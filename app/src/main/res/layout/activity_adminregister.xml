@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pic2"
-    tools:context=".MainActivity">
+    tools:context=".adminregister">
 
     <ImageView
-        android:id="@+id/admin_login_bmsit_imv"
+        android:id="@+id/bmsitlogo"
         android:layout_width="128dp"
         android:layout_height="130dp"
         android:layout_alignParentTop="true"
@@ -17,10 +17,10 @@
         android:src="@drawable/bmsitlogo" />
 
     <EditText
-        android:id="@+id/admin_login_username_edittext"
+        android:id="@+id/textview1"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/admin_login_bmsit_imv"
+        android:layout_below="@+id/bmsitlogo"
         android:layout_centerInParent="true"
         android:layout_marginTop="87dp"
         android:background="#3D5069"
@@ -30,10 +30,10 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/admin_login_password_edittext"
+        android:id="@+id/textview2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/admin_login_username_edittext"
+        android:layout_below="@+id/textview1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="#3D5069"
@@ -43,26 +43,27 @@
         android:inputType="textPassword" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/admin_login_login_btn"
+        android:id="@+id/regiserbutton"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/admin_login_password_edittext"
+
+        android:layout_below="@+id/textview2"
         android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="45dp"
         app:cardBackgroundColor="#FF69B4"
         app:cardCornerRadius="25dp"
-        app:cardElevation="10dp"
-        >
+        app:cardElevation="10dp">
 
 
         <TextView
-            android:id="@+id/admin_login_login_txtview"
+            android:id="@+id/textview3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="125dp"
             android:layout_marginTop="10dp"
-            android:text="login"
+            android:text="register"
             android:textColor="#fff"
             android:textSize="18sp" />
 
@@ -70,15 +71,14 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/backtologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/admin_login_login_btn"
+        android:layout_below="@+id/regiserbutton"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="56dp"
         android:layout_marginRight="135dp"
-        android:text="register here"
-        />
+        android:text="back to login" />
 
 </RelativeLayout>

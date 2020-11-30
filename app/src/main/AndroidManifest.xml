@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeManagement">
-        <activity android:name=".studentregister"></activity>
+        <activity android:name=".adminregister"></activity>
+        <activity android:name=".studentregister" />
         <activity
             android:name=".studentLoginActivity"
             android:label="StudentLogin" />
