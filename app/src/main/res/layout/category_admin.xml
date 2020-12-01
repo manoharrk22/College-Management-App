@@ -34,7 +34,7 @@
             android:layout_width="72dp"
             android:layout_height="55dp"
             android:background="@color/white"
-            android:src="@drawable/bmsitlogo"
+            android:src="@drawable/bmsitlogo2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,7 +99,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circle_blue"
-                    android:src="@drawable/ic_notice"
+                    android:src="@drawable/ic_action_videoupload"
                     android:padding="15dp"/>
                 <View
                     android:layout_width="match_parent"
@@ -109,7 +109,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="upload notice"
+                    android:text="upload video"
                     android:textStyle="bold"
                     android:textColor="@color/textcolor"
                     android:padding="5dp"

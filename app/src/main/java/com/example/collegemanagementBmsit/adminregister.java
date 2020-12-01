@@ -51,7 +51,7 @@ public class adminregister extends AppCompatActivity {
                             if (!task.isSuccessful()) {
                                 Toast.makeText(adminregister.this, "signup unsuccessful", Toast.LENGTH_SHORT).show();
                             } else {
-                                startActivity(new Intent(adminregister.this, CategoryStudentActivity.class));
+                                startActivity(new Intent(adminregister.this, CategoryAdminActivity.class));
                             }
                         }
                     });
