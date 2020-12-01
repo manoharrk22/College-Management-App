@@ -25,6 +25,9 @@
         <activity
             android:name=".CategoryAdminActivity"
             android:label="CategoryAdmin" />
+        <activity
+            android:name=".AddToGalleryActivity"
+            android:label="AddToGalleryActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

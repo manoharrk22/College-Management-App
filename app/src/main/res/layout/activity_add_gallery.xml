@@ -25,9 +25,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="16dp"
-
         android:ems="11"
-        android:hint="Notice Description"
+        android:hint="Image Description"
         android:textColorHint="@color/textbg" />
 
     <ImageView

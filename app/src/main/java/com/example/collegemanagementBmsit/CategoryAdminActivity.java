@@ -10,6 +10,7 @@ import androidx.cardview.widget.CardView;
 
 public class CategoryAdminActivity extends AppCompatActivity {
     CardView notice;
+    private CardView uploadGallerycardview;
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,16 @@ public class CategoryAdminActivity extends AppCompatActivity {
                 Intent i=new Intent(CategoryAdminActivity.this,addnotice.class);
                 Toast.makeText(CategoryAdminActivity.this,"add notice",Toast.LENGTH_SHORT).show();
                 startActivity(i);
+            }
+        });
+
+        uploadGallerycardview=(CardView)findViewById(R.id.addgalleryimage);
+        uploadGallerycardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent uploadGalleryIntent=new Intent(CategoryAdminActivity.this,AddToGalleryActivity.class);
+                Toast.makeText(CategoryAdminActivity.this,"add to Gallery",Toast.LENGTH_SHORT).show();
+                startActivity(uploadGalleryIntent);
             }
         });
     }
