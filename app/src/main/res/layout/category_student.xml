@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/category_student_layout_header_id"
+        android:id="@+id/category_admin_layout_header_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/category_layout_header"
@@ -15,11 +17,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/category_student_bmsitheader_txtv"
+            android:id="@+id/category_admin_bmsitheader_txtv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="bmsit Student"
+            android:text="bmsit student"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="32sp"
@@ -28,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/category_student_bmsitLogo_imv"
+            android:id="@+id/category_admin_bmsitLogo_imv"
             android:layout_width="72dp"
             android:layout_height="55dp"
             android:background="@color/white"
@@ -38,198 +40,272 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:overScrollMode="never"
-        android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/category_student_layout_header_id"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="41dp">
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/category_student_scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/addnotice1"
+            android:elevation="5dp"
+            >
             <LinearLayout
-                android:id="@+id/category_student_category_one"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_grey_background"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="20dp"
-                app:layout_constraintDimensionRatio="M,1:1"
-                app:layout_constraintEnd_toStartOf="@id/category_student_category_two"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:gravity="center">
+
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:padding="8dp"
-                    android:src="@drawable/baseline_donut_large_black_18dp" />
-
-                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_blue"
+                    android:src="@drawable/ic_notice"
+                    android:padding="15dp"/>
+                <View
                     android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:text="Category1"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-
+                    android:text="view notice"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
-
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/addnotice"
+            android:elevation="5dp"
+            >
             <LinearLayout
-                android:id="@+id/category_student_category_two"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_grey_background"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="20dp"
-                app:layout_constraintDimensionRatio="M,1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/category_student_category_one"
-                app:layout_constraintTop_toTopOf="parent">
+                android:gravity="center">
+
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:padding="8dp"
-                    android:src="@drawable/baseline_donut_large_black_18dp" />
-
-                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_blue"
+                    android:src="@drawable/ic_notice"
+                    android:padding="15dp"/>
+                <View
                     android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:text="Category2"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-
+                    android:text="view notice"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
-
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/addgalleryimage"
+            android:elevation="5dp"
+            >
             <LinearLayout
-                android:id="@+id/category_student_category_three"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_grey_background"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="20dp"
-                app:layout_constraintDimensionRatio="M,1:1"
-                app:layout_constraintEnd_toStartOf="@id/category_student_category_two"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/category_student_category_one">
+                android:gravity="center">
+
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:padding="8dp"
-                    android:src="@drawable/baseline_donut_large_black_18dp" />
-
-                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_purple"
+                    android:src="@drawable/ic_image"
+                    android:padding="15dp"/>
+                <View
                     android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:text="Category3"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
+                    android:text="view image"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/addebook"
+            android:elevation="5dp"
+            >
             <LinearLayout
-                android:id="@+id/category_student_category_four"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_grey_background"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="20dp"
-                app:layout_constraintDimensionRatio="M,1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/category_student_category_one"
-                app:layout_constraintTop_toBottomOf="@id/category_student_category_two">
+                android:gravity="center">
+
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:padding="8dp"
-                    android:src="@drawable/baseline_donut_large_black_18dp" />
-
-                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_pink"
+                    android:src="@drawable/ic_uppload"
+                    android:padding="15dp"/>
+                <View
                     android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:text="Category4"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
+                    android:text=" view ebook"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
-
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/faculty"
+            android:elevation="5dp"
+            >
             <LinearLayout
-                android:id="@+id/category_student_category_five"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_grey_background"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="M,1:1"
-                app:layout_constraintLeft_toRightOf="@id/category_student_category_three"
-                app:layout_constraintRight_toLeftOf="@id/category_student_category_four"
-                app:layout_constraintTop_toBottomOf="@id/category_student_category_four">
+                android:gravity="center">
+
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:padding="8dp"
-                    android:src="@drawable/baseline_donut_large_black_18dp" />
-
-                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_yellow"
+                    android:src="@drawable/ic_group"
+                    android:padding="15dp"/>
+                <View
                     android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:text="Category5"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
+                    android:text="faculty details"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
 
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/deletenotice"
+            android:elevation="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_green"
+                    android:src="@drawable/ic_delete"
+                    android:padding="15dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgrey"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="delete notice"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
     <Button
         android:id="@+id/buttonlogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:text="logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="159dp"
+        android:layout_marginBottom="70dp"/>
+
+
+</LinearLayout>
