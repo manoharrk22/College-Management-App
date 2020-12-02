@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#D2CECE"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/category_layout_header"
         android:padding="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
