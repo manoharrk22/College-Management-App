@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,54 +9,65 @@
 
 
     <ImageView
-        android:id="@+id/student_login_bmsit_imv"
+
+        android:id="@+id/student_login_bmsit_logo"
         android:layout_width="128dp"
         android:layout_height="130dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp"
-        android:src="@drawable/bmsitlogo" />
+        android:layout_marginTop="120dp"
+        android:src="@drawable/bmsitlogo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/student_login_username_edittext"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_below="@+id/student_login_bmsit_imv"
+        android:layout_height="45dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="87dp"
-        android:background="#3D5069"
+        android:layout_marginTop="135dp"
+        android:background="#F2F5F6"
         android:drawableLeft="@drawable/ic_action_user"
-        android:ems="10"
-        android:hint="useremail"
-        android:inputType="textEmailAddress" />
+        android:ems="12"
+        android:hint="admin email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#504B4B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_login_bmsit_logo" />
+
 
     <EditText
         android:id="@+id/student_login_password_edittext"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_below="@+id/student_login_username_edittext"
+        android:layout_height="45dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:background="#3D5069"
+        android:layout_marginTop="35dp"
+        android:background="#F3EFEC"
         android:drawableLeft="@drawable/ic_action_password"
-        android:ems="10"
+        android:ems="12"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#504B4B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_login_username_edittext" />
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/student_login_login_btn"
         android:layout_width="300dp"
         android:layout_height="50dp"
-
         android:layout_below="@+id/student_login_password_edittext"
-        android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="45dp"
         app:cardBackgroundColor="#FF69B4"
         app:cardCornerRadius="25dp"
-        app:cardElevation="10dp">
-
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_login_password_edittext">
 
         <TextView
             android:id="@+id/student_login_login_txtview"
@@ -75,11 +86,12 @@
         android:id="@+id/student_login_registerHere_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/student_login_login_btn"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="56dp"
-        android:layout_marginRight="135dp"
-        android:text="register here" />
+        android:text="register here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_login_login_btn" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
