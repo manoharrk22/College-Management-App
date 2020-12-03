@@ -16,12 +16,24 @@ public class CategoryStudentActivity extends AppCompatActivity {
     FirebaseAuth mfirebaseauth;
     private FirebaseAuth.AuthStateListener mauthstatelistener;
     private CardView uploadGallerycardview;
+    private CardView notice;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_student);
         btn = findViewById(R.id.buttonlogout);
+        notice=(CardView)findViewById(R.id.addnotice1);
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(CategoryStudentActivity.this,viewnotice.class);
+                Toast.makeText(CategoryStudentActivity.this,"notices",Toast.LENGTH_SHORT).show();
+                startActivity(i);
+            }
+        });
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

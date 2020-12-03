@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="upload notice"
+                        android:text="View notice"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
