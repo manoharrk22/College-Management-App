@@ -39,13 +39,14 @@ public class HomeActivity extends AppCompatActivity {
 
         Dataref= FirebaseDatabase.getInstance().getReference().child("Gallery");
         recyclerView=findViewById(R.id.recylerView);
-        floatingbtn=findViewById(R.id.floatingbtn);
-        relativeLayout=findViewById(R.id.activity_view_gallery_layout);
-        //Animation for gradient
-        AnimationDrawable animationDrawable=(AnimationDrawable) relativeLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(4000);
-        animationDrawable.start();
+       floatingbtn=findViewById(R.id.floatingbtn);
+
+//        relativeLayout=findViewById(R.id.activity_view_gallery_layout);
+//        //Animation for gradient
+//        AnimationDrawable animationDrawable=(AnimationDrawable) relativeLayout.getBackground();
+//        animationDrawable.setEnterFadeDuration(2000);
+//        animationDrawable.setExitFadeDuration(4000);
+//        animationDrawable.start();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setHasFixedSize(true);
