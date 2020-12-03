@@ -36,15 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button butto =(Button)findViewById(R.id.button1temp);
-        butto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(v.getContext(), "temppp activity", Toast.LENGTH_LONG).show();
-                Intent i = new Intent(MainActivity.this, HomeActivity.class);
-                startActivity(i);
-            }
-        });
 
 
     }

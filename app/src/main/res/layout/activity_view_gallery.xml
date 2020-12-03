@@ -9,13 +9,15 @@
         android:id="@+id/inputSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search data here ..."
+        android:text="College Gallery"
+        android:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textAllCaps="true"
         android:layout_margin="20dp"
         android:background="@drawable/input_search"
         android:paddingLeft="20dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:drawableRight="@drawable/ic_search"
         android:paddingRight="10dp"
         />
     <androidx.recyclerview.widget.RecyclerView

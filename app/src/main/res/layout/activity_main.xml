@@ -55,10 +55,5 @@
             android:textSize="22sp" />
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button1temp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
 </RelativeLayout>
