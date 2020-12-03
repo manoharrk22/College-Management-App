@@ -2,11 +2,13 @@ package com.example.collegemanagementBmsit;
 
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     FirebaseRecyclerOptions<com.example.collegemanagementBmsit.Gallery> options;
     FirebaseRecyclerAdapter<Gallery,MyViewHolder>adapter;
     DatabaseReference Dataref;
+    RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +38,15 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_gallery);
 
         Dataref= FirebaseDatabase.getInstance().getReference().child("Gallery");
-        inputSearch=findViewById(R.id.inputSearch);
         recyclerView=findViewById(R.id.recylerView);
         floatingbtn=findViewById(R.id.floatingbtn);
+        relativeLayout=findViewById(R.id.activity_view_gallery_layout);
+        //Animation for gradient
+        AnimationDrawable animationDrawable=(AnimationDrawable) relativeLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
+
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setHasFixedSize(true);
         floatingbtn.setOnClickListener(new View.OnClickListener() {

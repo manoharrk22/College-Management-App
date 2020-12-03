@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/activity_view_gallery_layout">
 
-    <EditText
+    <TextView
         android:id="@+id/inputSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="College Gallery"
-        android:backgroundTint="@color/colorPrimary"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/input_search"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_horizontal"
         android:paddingLeft="20dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:paddingRight="10dp"
-        />
+        android:paddingTop="4dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="4dp"
+        android:text="College Gallery"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/inputSearch"
+        android:id="@+id/recylerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recylerView"
-        />
+        android:layout_below="@+id/inputSearch" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/floatingbtn"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_add"
-        android:backgroundTint="@color/colorPrimary"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
         android:layout_margin="25dp"
-        android:layout_alignParentRight="true" />
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_add" />
 
 
 </RelativeLayout>
