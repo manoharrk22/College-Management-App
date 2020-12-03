@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeManagement">
-        <activity android:name=".viewnotice"></activity>
+        <activity android:name=".adminmail"></activity>
+        <activity android:name=".studentmail" />
+        <activity android:name=".viewnotice" />
         <activity android:name=".showuploads" />
         <activity android:name=".addnotice" />
         <activity android:name=".adminregister" />
@@ -31,7 +33,7 @@
         <activity
             android:name=".AddToGalleryActivity"
             android:label="AddToGalleryActivity" />
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

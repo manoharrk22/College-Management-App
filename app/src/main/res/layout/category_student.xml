@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:overScrollMode="never"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    android:background="@drawable/pic5">
 
 
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D2CECE"
         android:orientation="vertical">
 
 
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/category_layout_header"
+            android:background="#D3D3D3"
             android:padding="10dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -89,7 +89,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="View notice"
+
+                        android:text="View Notice"
+
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -116,7 +118,7 @@
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
-                        android:background="@drawable/circle_red"
+                        android:background="@drawable/circle_blue"
                         android:padding="15dp"
                         android:src="@drawable/ic_image1" />
 
@@ -131,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="View image"
+                        android:text="View Image"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -181,7 +183,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="View ebook"
+                        android:text="View eBook"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -222,7 +224,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="faculty details"
+                        android:text="Faculty Details"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -239,7 +241,7 @@
             android:orientation="horizontal">
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/deletenotice"
+                android:id="@+id/sendmail1"
                 android:layout_width="180dp"
                 android:layout_height="200dp"
                 android:layout_margin="10dp"
@@ -257,9 +259,9 @@
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
-                        android:background="@drawable/circle_green"
+                        android:background="@drawable/circle_yellow"
                         android:padding="15dp"
-                        android:src="@drawable/ic_delete" />
+                        android:src="@drawable/ic_action_email" />
 
                     <View
                         android:layout_width="match_parent"
@@ -272,7 +274,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="view notice"
+                        android:text="send a mail"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />

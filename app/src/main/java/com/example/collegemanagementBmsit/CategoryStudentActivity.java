@@ -1,6 +1,7 @@
 package com.example.collegemanagementBmsit;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,7 @@ public class CategoryStudentActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mauthstatelistener;
     private CardView uploadGallerycardview;
     private CardView notice;
-
+private CardView mail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,15 @@ public class CategoryStudentActivity extends AppCompatActivity {
         setContentView(R.layout.category_student);
         btn = findViewById(R.id.buttonlogout);
         notice=(CardView)findViewById(R.id.addnotice1);
+        mail=(CardView)findViewById(R.id.sendmail1);
+        mail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+Intent i=new Intent(CategoryStudentActivity.this,studentmail.class);
+startActivity(i);
+            }
+        });
+
         notice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
