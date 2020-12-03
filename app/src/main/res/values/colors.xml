@@ -16,15 +16,17 @@
     <color name="blue">#87ceeb</color>
     <color name="textcolor">#121212</color>
     <color name="lightgrey">#c1c1c1</color>
-    <color name="colorPrimary">#0277bd</color>
     <color name="colorPrimaryDark">#004c8c</color>
     <color name="colorAccent">#0277bd</color>
     <color name="homebackground">#59A1DD</color>
     <color name="deeppurple">#7c4dff</color>
-    <color name="yellow">#2375B6</color>
+    <color name="yellow">#E8CF4C</color>
     <color name="green1">#00bfa5</color>
     <color name="textbg">#616262</color>
     <color name="red2">#F4447F</color>
+
+    <color name="tanBackground">#E2E1DB</color>
+    <color name="colorPrimary">#16AFCA</color>
 
     <!--    <color name="ColorBackGround">#71DBF4</color>-->
 

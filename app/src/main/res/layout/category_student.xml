@@ -6,7 +6,7 @@
     android:fillViewport="true"
     android:overScrollMode="never"
     android:scrollbars="vertical"
-    android:background="@drawable/pic5">
+    android:background="@color/tanBackground">
 
 
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="#D3D3D3"
+            android:background="@color/colorPrimary"
             android:padding="10dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -41,7 +41,6 @@
                 android:id="@+id/category_admin_bmsitLogo_imv"
                 android:layout_width="72dp"
                 android:layout_height="55dp"
-                android:background="@color/white"
                 android:src="@drawable/bmsitlogo2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -168,7 +167,7 @@
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
-                        android:background="@drawable/circle_pink"
+                        android:background="@drawable/circle_yellow"
                         android:padding="15dp"
                         android:src="@drawable/ic_uppload" />
 
@@ -209,7 +208,7 @@
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
-                        android:background="@drawable/circle_yellow"
+                        android:background="@drawable/circle_pink"
                         android:padding="15dp"
                         android:src="@drawable/ic_group" />
 
@@ -259,7 +258,7 @@
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
-                        android:background="@drawable/circle_yellow"
+                        android:background="@drawable/circle_green"
                         android:padding="15dp"
                         android:src="@drawable/ic_action_email" />
 
@@ -274,7 +273,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="send a mail"
+                        android:text="Send Mail"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -299,7 +298,7 @@
                     <ImageView
                         android:layout_width="84dp"
                         android:layout_height="84dp"
-                        android:background="@drawable/circle_blue"
+                        android:background="@drawable/circle_red"
                         android:padding="15dp"
                         android:src="@drawable/ic_video_upload" />
 
@@ -330,7 +329,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:text="logout" />
+            android:text="logout"
+            android:backgroundTint="@color/colorPrimary"/>
 
 
     </LinearLayout>
