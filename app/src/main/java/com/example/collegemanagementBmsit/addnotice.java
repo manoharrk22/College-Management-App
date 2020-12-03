@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -42,16 +43,18 @@ public class addnotice extends AppCompatActivity {
     private DatabaseReference mDatabaseRef;
     private StorageTask mUploadTask;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addnotice);
-        mButtonChooseImage = findViewById(R.id.button_choose_notice);
-        mButtonUpload = findViewById(R.id.uploadnotice);
-        mTextViewShowUploads = findViewById(R.id.showuploads);
-        mEditTextFileName = findViewById(R.id.enter_notice_name);
-        mImageView = findViewById(R.id.noticeimage);
-        mProgressBar = findViewById(R.id.progressbar);
+        mButtonChooseImage =(Button) findViewById(R.id.button_choose_notice);
+        mButtonUpload = (Button)findViewById(R.id.uploadnotice);
+        mTextViewShowUploads =(TextView) findViewById(R.id.showuploads);
+        mEditTextFileName =(EditText) findViewById(R.id.enter_notice_name);
+        mImageView = (ImageView)findViewById(R.id.noticeimage);
+        mProgressBar =(ProgressBar) findViewById(R.id.progressbar);
+
         mStorageRef = FirebaseStorage.getInstance().getReference("uploads");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads");
         mButtonChooseImage.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +76,7 @@ public class addnotice extends AppCompatActivity {
         mTextViewShowUploads.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                openImagesActivity();
             }
         });
 
@@ -117,8 +121,17 @@ public class addnotice extends AppCompatActivity {
                                 }
                             }, 2000);
                             Toast.makeText(addnotice.this, "Upload successful", Toast.LENGTH_LONG).show();
-                            Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),
-                                    taskSnapshot.getUploadSessionUri().toString());
+//                            Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),
+//                                    taskSnapshot.getUploadSessionUri().toString());
+//                            String uploadId = mDatabaseRef.push().getKey();
+//                            mDatabaseRef.child(uploadId).setValue(upload);
+                            Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
+                            while (!urlTask.isSuccessful());
+                            Uri downloadUrl = urlTask.getResult();
+
+                            //Log.d(TAG, "onSuccess: firebase download url: " + downloadUrl.toString()); //use if testing...don't need this line.
+                            Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),downloadUrl.toString());
+
                             String uploadId = mDatabaseRef.push().getKey();
                             mDatabaseRef.child(uploadId).setValue(upload);
                         }
@@ -140,4 +153,8 @@ public class addnotice extends AppCompatActivity {
         }
 
     }
+private void openImagesActivity(){
+        Intent i=new Intent(addnotice.this,showuploads.class);
+        startActivity(i);
+}
 }
