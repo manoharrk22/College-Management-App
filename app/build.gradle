@@ -46,7 +46,8 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.android.support:cardview-v7:26.1.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.google.android.material:material:1.3.0-alpha04'
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
 }
 apply plugin: 'com.google.gms.google-services'
