@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="75dp"
             android:layout_marginTop="8dp"
-            android:text="admin"
+            android:text="Admin"
             android:textColor="#fff"
             android:textSize="22sp" />
     </androidx.cardview.widget.CardView>
@@ -43,7 +43,7 @@
         android:layout_below="@+id/activity_main_admin_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        app:cardBackgroundColor="#FF69B4"
+        app:cardBackgroundColor="#59A1DD"
         app:cardCornerRadius="30dp">
 
         <TextView
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="75dp"
             android:layout_marginTop="8dp"
-            android:text="student"
+            android:text="Student"
             android:textColor="#fff"
             android:textSize="22sp" />
     </androidx.cardview.widget.CardView>

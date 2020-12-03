@@ -10,7 +10,7 @@
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D2CECE"
+        android:background="#FFDB84"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="upload notice"
+                        android:text="Upload Notice"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -129,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="upload image"
+                        android:text="Upload Image"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -179,7 +179,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="upload ebook"
+                        android:text="Upload eBook"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -220,7 +220,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="update faculty"
+                        android:text="Update Faculty"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -270,7 +270,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="delete notice"
+                        android:text="Delete Notice"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />

@@ -11,7 +11,7 @@
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D2CECE"
+        android:background="#34B7F1"
         android:orientation="vertical">
 
 
@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="upload notice"
+                        android:text="View Notice"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -131,7 +131,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:padding="5dp"
-                        android:text="View image"
+                        android:text="View Image"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -181,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="View ebook"
+                        android:text="View eBook"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -222,7 +222,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="faculty details"
+                        android:text="Faculty Details"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -272,7 +272,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="5dp"
-                        android:text="view notice"
+                        android:text="View Notice"
                         android:textColor="@color/textcolor"
                         android:textSize="20sp"
                         android:textStyle="bold" />
