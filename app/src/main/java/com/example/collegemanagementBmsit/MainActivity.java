@@ -3,6 +3,7 @@ package com.example.collegemanagementBmsit;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(v.getContext(), "student activity", Toast.LENGTH_LONG).show();
                 Intent studentIntent = new Intent(MainActivity.this, studentLoginActivity.class);
                 startActivity(studentIntent);
+            }
+        });
+
+        Button butto =(Button)findViewById(R.id.button1temp);
+        butto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "temppp activity", Toast.LENGTH_LONG).show();
+                Intent i = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(i);
             }
         });
 

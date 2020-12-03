@@ -29,7 +29,7 @@ public class CategoryAdminActivity extends AppCompatActivity {
         uploadGallerycardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent uploadGalleryIntent=new Intent(CategoryAdminActivity.this,AddToGalleryActivity.class);
+                Intent uploadGalleryIntent=new Intent(CategoryAdminActivity.this,HomeActivity.class);
                 Toast.makeText(CategoryAdminActivity.this,"add to Gallery",Toast.LENGTH_SHORT).show();
                 startActivity(uploadGalleryIntent);
             }
