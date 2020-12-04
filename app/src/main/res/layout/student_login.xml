@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic2"
+    android:background="@drawable/studentbag"
     tools:context=".MainActivity">
 
 
@@ -30,7 +30,7 @@
         android:background="#F2F5F6"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="12"
-        android:hint="admin email"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColorHint="#504B4B"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         android:background="#F3EFEC"
         android:drawableLeft="@drawable/ic_action_password"
         android:ems="12"
-        android:hint="password"
+        android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#504B4B"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="125dp"
             android:layout_marginTop="10dp"
-            android:text="login"
+            android:text="Login"
             android:textColor="#fff"
             android:textSize="18sp" />
 
