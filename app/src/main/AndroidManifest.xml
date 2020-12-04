@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeManagement">
-        <activity android:name=".adminmail"></activity>
+        <activity android:name=".staffdetails"></activity>
+        <activity android:name=".adminmail" />
         <activity android:name=".studentmail" />
         <activity android:name=".viewnotice" />
         <activity android:name=".showuploads" />

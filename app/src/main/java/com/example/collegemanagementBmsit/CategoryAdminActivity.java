@@ -19,6 +19,7 @@ public class CategoryAdminActivity extends AppCompatActivity {
     FirebaseAuth mfirebaseauth;
     private FirebaseAuth.AuthStateListener mauthstatelistener;
     Button logout;
+    CardView staff;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -27,6 +28,14 @@ public class CategoryAdminActivity extends AppCompatActivity {
         notice=(CardView)findViewById(R.id.addnotice1);
         mail=(CardView)findViewById(R.id.sendmail);
         logout=(Button)findViewById(R.id.buttonlogout) ;
+        staff=(CardView)findViewById(R.id.faculty);
+        staff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CategoryAdminActivity.this, staffdetails.class);
+                startActivity(i);
+            }
+        });
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
