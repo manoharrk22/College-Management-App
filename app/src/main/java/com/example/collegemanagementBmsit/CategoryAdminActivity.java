@@ -41,7 +41,7 @@ public class CategoryAdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(CategoryAdminActivity.this, AdminLoginActivity.class);
+                Intent i = new Intent(CategoryAdminActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });

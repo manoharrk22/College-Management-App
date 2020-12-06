@@ -49,7 +49,7 @@ startActivity(i);
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(CategoryStudentActivity.this,studentLoginActivity.class);
+                Intent i = new Intent(CategoryStudentActivity.this,MainActivity.class);
                 startActivity(i);
             }
         });
