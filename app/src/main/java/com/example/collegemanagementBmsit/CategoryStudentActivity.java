@@ -10,10 +10,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class CategoryStudentActivity extends AppCompatActivity {
-    Button btn;
+    FloatingActionButton btn;
     FirebaseAuth mfirebaseauth;
     private FirebaseAuth.AuthStateListener mauthstatelistener;
     private CardView uploadGallerycardview;
@@ -24,7 +25,7 @@ private CardView mail;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_student);
-        btn = findViewById(R.id.buttonlogout);
+        btn =(FloatingActionButton) findViewById(R.id.buttonlogout);
         notice=(CardView)findViewById(R.id.addnotice1);
         mail=(CardView)findViewById(R.id.sendmail1);
         mail.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +49,7 @@ startActivity(i);
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(CategoryStudentActivity.this, studentLoginActivity.class);
+                Intent i = new Intent(CategoryStudentActivity.this,studentLoginActivity.class);
                 startActivity(i);
             }
         });

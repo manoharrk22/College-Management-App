@@ -21,10 +21,12 @@
         <activity android:name=".studentregister" />
         <activity
             android:name=".studentLoginActivity"
-            android:label="StudentLogin" />
+            android:label="StudentLogin"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".AdminLoginActivity"
-            android:label="AdminLogin" />
+            android:label="AdminLogin"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".CategoryStudentActivity"
             android:label="CategoryStudent" />

@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EBF3F8">
+    android:background="@color/galleryViewBg">
 
     <TextView
         android:id="@+id/inputSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="College Gallery"
-        android:backgroundTint="@color/colorPrimary"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="22sp"
-        android:textAllCaps="true"
-        android:layout_margin="20dp"
+        android:layout_margin="2dp"
         android:background="@drawable/input_search"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingTop="8dp"
-        android:paddingBottom="8dp"
         android:paddingRight="10dp"
-        />
+        android:paddingBottom="8dp"
+        android:text="College Gallery"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/inputSearch"
+        android:id="@+id/recylerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recylerView"
-        android:background="#D7E4E4"/>
+        android:layout_below="@+id/inputSearch"
+        android:background="@color/galleryViewBg" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/floatingbtn"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_add"
-        android:backgroundTint="@color/colorPrimary"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="25dp"
-        android:layout_alignParentRight="true" />
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_add" />
 
 
 </RelativeLayout>

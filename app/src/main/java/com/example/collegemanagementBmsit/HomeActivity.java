@@ -41,8 +41,8 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView=findViewById(R.id.recylerView);
        floatingbtn=findViewById(R.id.floatingbtn);
 
-//        relativeLayout=findViewById(R.id.activity_view_gallery_layout);
-//        //Animation for gradient
+       //relativeLayout=findViewById(R.id.activity_view_gallery_layout);
+        //Animation for gradient
 //        AnimationDrawable animationDrawable=(AnimationDrawable) relativeLayout.getBackground();
 //        animationDrawable.setEnterFadeDuration(2000);
 //        animationDrawable.setExitFadeDuration(4000);

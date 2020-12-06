@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:text="bmsit student"
+                android:text="student"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
                 android:textSize="32sp"
@@ -37,13 +37,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/category_admin_bmsitLogo_imv"
-                android:layout_width="72dp"
-                android:layout_height="55dp"
-                android:src="@drawable/bmsitlogo2"
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonlogout"
+                android:src="@drawable/ic_logout"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:backgroundTint="@color/white"
+                />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -323,14 +325,6 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/buttonlogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:text="logout"
-            android:backgroundTint="@color/colorPrimary"/>
 
 
     </LinearLayout>

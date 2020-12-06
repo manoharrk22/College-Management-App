@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        relativeLayout=findViewById(R.id.activity_main_layout);
-//        //Animation for gradient
-//        AnimationDrawable animationDrawable=(AnimationDrawable) relativeLayout.getBackground();
-//        animationDrawable.setEnterFadeDuration(2000);
-//        animationDrawable.setExitFadeDuration(4000);
-//        animationDrawable.start();
+        relativeLayout=findViewById(R.id.activity_main_layout);
+        //Animation for gradient
+        AnimationDrawable animationDrawable=(AnimationDrawable) relativeLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
 
         CardView adminButton = (CardView) findViewById(R.id.activity_main_admin_btn);
         adminButton.setOnClickListener(new View.OnClickListener() {

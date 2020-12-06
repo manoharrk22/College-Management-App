@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class CategoryAdminActivity extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class CategoryAdminActivity extends AppCompatActivity {
     private CardView uploadGallerycardview;
     FirebaseAuth mfirebaseauth;
     private FirebaseAuth.AuthStateListener mauthstatelistener;
-    Button logout;
+    FloatingActionButton logout;
     CardView staff;
 
     @Override
@@ -27,7 +28,7 @@ public class CategoryAdminActivity extends AppCompatActivity {
         setContentView(R.layout.category_admin);
         notice=(CardView)findViewById(R.id.addnotice1);
         mail=(CardView)findViewById(R.id.sendmail);
-        logout=(Button)findViewById(R.id.buttonlogout) ;
+        logout=(FloatingActionButton)findViewById(R.id.buttonlogout) ;
         staff=(CardView)findViewById(R.id.faculty);
         staff.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic2"
+    android:background="@drawable/gradient_list"
     tools:context=".MainActivity"
     android:id="@+id/activity_main_layout">
 
@@ -13,8 +13,7 @@
         android:layout_width="128dp"
         android:layout_height="130dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp"
-        android:src="@drawable/bmsitlogo2" />
+        android:layout_marginTop="133dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/activity_main_admin_btn"
@@ -23,7 +22,7 @@
         android:layout_below="@+id/activity_main_bmsitLogo_imv"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
-        app:cardBackgroundColor="#FF69B4"
+        app:cardBackgroundColor="@color/adminLogin"
         app:cardCornerRadius="30dp">
 
         <TextView
@@ -43,7 +42,7 @@
         android:layout_below="@+id/activity_main_admin_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        app:cardBackgroundColor="#59A1DD"
+        app:cardBackgroundColor="@color/studentLogin"
         app:cardCornerRadius="30dp">
 
         <TextView

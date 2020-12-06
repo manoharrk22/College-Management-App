@@ -4,62 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic2"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/admin_login_bmsit_imv"
-        android:layout_width="128dp"
-        android:layout_height="130dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:src="@drawable/bmsitlogo2"
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/adminLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/admin_login_username_edittext"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_below="@+id/admin_login_bmsit_imv"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="120dp"
-        android:background="#F2F5F6"
-        android:drawableLeft="@drawable/ic_action_user"
-        android:ems="14"
-        android:hint="Admin Email"
-        android:inputType="textEmailAddress"
-        android:textColorHint="#504B4B"
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave_admin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_login_bmsit_imv" />
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_person"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Admin Ready to Login ?"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/topView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/admin_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:textColor="@color/adminLogin"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"/>
+
+    <EditText
+        android:id="@+id/admin_login_username_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border_admin"
+        android:drawableStart="@drawable/ic_email_admin"
+        android:layout_marginTop="35dp"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:textColorHint="@color/lightgrey"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_textview"
+        android:drawableLeft="@drawable/ic_email_admin" />
 
     <EditText
         android:id="@+id/admin_login_password_edittext"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_below="@+id/admin_login_username_edittext"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:background="#F3EFEC"
-        android:drawableLeft="@drawable/ic_action_password"
-        android:ems="14"
-        android:hint="Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border_admin"
+        android:drawableStart="@drawable/ic_lock_admin"
+        android:drawablePadding="16dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:textColorHint="@color/lightgrey"
+        android:hint="password"
         android:inputType="textPassword"
-        android:textColorHint="#504B4B"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_login_username_edittext" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_login_username_edittext"
+        android:drawableLeft="@drawable/ic_lock_admin" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/admin_login_login_btn"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_below="@+id/admin_login_password_edittext"
-        android:layout_marginTop="45dp"
-        app:cardBackgroundColor="#FF69B4"
+        android:layout_marginTop="65dp"
+        app:cardBackgroundColor="@color/adminLogin"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +133,7 @@
 
     </androidx.cardview.widget.CardView>
 
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -87,8 +141,10 @@
         android:layout_below="@+id/admin_login_login_btn"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:text="register here"
         android:layout_marginTop="25dp"
+        android:text="register here"
+        android:backgroundTint="@color/adminLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/admin_login_login_btn" />
