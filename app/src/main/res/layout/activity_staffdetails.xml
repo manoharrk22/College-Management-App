@@ -1,218 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".staffdetails"
-    android:background="@drawable/pic5">
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="vertical">
 
 
-
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/faculty"
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:elevation="5dp"
-        app:cardCornerRadius="8dp"
-        app:rippleColor="@color/blue"
-        android:padding="10dp"
-        >
+        android:layout_height="match_parent"
+        android:background="@drawable/pic5"
+        tools:context=".staffdetails">
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/faculty"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="TODO" />
+            android:layout_height="400dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_staff"
+            android:elevation="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:rippleColor="@color/blue">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="staff 1"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                >
-
-
-            </TextView>
-
-
-
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="25dp"
-                android:background="@color/lightgrey" />
+                android:layout_height="match_parent"
+                android:background="@color/teal_700"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="subject"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_staff"
+                    tools:srcCompat="@tools:sample/avatars" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="25dp"
-                android:background="@color/lightgrey" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="phone no"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="staff 1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="26sp"
+                    android:textStyle="bold">
 
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                </TextView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/faculty2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:elevation="5dp"
-        app:cardCornerRadius="8dp"
-        app:rippleColor="@color/blue"
-        android:padding="10dp"
-        android:layout_below="@+id/faculty"
-        >
 
-        <LinearLayout
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/lightgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="dept"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/lightgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Phone no"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/faculty2"
+            android:layout_below="@id/faculty"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="400dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_staff"
+            android:elevation="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:rippleColor="@color/blue">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="staff 1"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="25dp"
-                android:background="@color/lightgrey" />
+                android:layout_height="match_parent"
+                android:background="@color/studentLogin"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="subject"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_staff"
+                    tools:srcCompat="@tools:sample/avatars" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="25dp"
-                android:background="@color/lightgrey" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="phone no"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="staff 2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="26sp"
+                    android:textStyle="bold">
 
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/faculty3"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:elevation="5dp"
-        app:cardCornerRadius="8dp"
-        app:rippleColor="@color/blue"
-        android:padding="10dp"
-        android:layout_below="@+id/faculty2"
-        >
+                </TextView>
 
-        <LinearLayout
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/lightgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="dept"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/lightgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Phone no"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/faculty3"
+            android:layout_below="@id/faculty2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="400dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_staff"
+            android:elevation="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:rippleColor="@color/blue">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="staff 3"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="25dp"
-                android:background="@color/lightgrey" />
+                android:layout_height="match_parent"
+                android:background="@color/adminLogin"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="subject"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_staff"
+                    tools:srcCompat="@tools:sample/avatars" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="25dp"
-                android:background="@color/lightgrey" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:text="phone no"
-                android:textColor="@color/textcolor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="staff 3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="26sp"
+                    android:textStyle="bold">
 
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                </TextView>
 
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/lightgrey" />
 
-</RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="dept"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/lightgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Phone no"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

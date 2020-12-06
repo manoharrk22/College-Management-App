@@ -3,15 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic4"
     android:padding="19dp"
     tools:context=".addnotice">
 
 
     <Button
         android:id="@+id/button_choose_notice"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="wrap_content"
+        android:backgroundTint="@color/adminLogin"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="-2dp"
@@ -24,14 +23,17 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="16dp"
-
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toEndOf="@+id/button_choose_notice"
+        android:layout_toRightOf="@+id/button_choose_notice"
         android:ems="11"
         android:hint="Notice Description"
-        android:textColorHint="@color/textbg" />
+        android:textColorHint="@color/black" />
 
     <ImageView
         android:id="@+id/noticeimage"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/progressbar"
@@ -45,7 +47,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="131dp" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="91dp" />
 
     <Button
         android:id="@+id/uploadnotice"
@@ -56,13 +59,15 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="143dp"
         android:layout_marginLeft="143dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/adminLogin"
         android:text="upload" />
 
     <TextView
         android:id="@+id/showuploads"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/uploadnotice"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
@@ -70,7 +75,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="31dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="50dp"
         android:layout_toEndOf="@+id/uploadnotice"
         android:layout_toRightOf="@+id/uploadnotice"
         android:gravity="center"
